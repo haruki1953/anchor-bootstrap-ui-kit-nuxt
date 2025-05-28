@@ -16,16 +16,8 @@
             Free Bootstrap UI Kit with
             <i class="fab fa-sass fa-2x text-cyan"></i>
           </h5>
-          <a
-            class="btn btn-outline-white btn-lg btn-round"
-            href="#"
-            data-toggle="modal"
-            data-target="#modal_newsletter"
+          <a class="btn btn-outline-white btn-lg btn-round" href="#"
             >Download
-            <a
-              href="https://github.com/wowthemesnet/Anchor-Bootstrap-UI-Kit/archive/master.zip"
-              class="downloadzip hidden"
-            ></a>
           </a>
         </div>
       </div>

@@ -22,7 +22,7 @@ watch(
 
 // 登录页面时，不显示底部与登录按钮
 const isLoginPage = computed(() => {
-  if (route.path === '/login') {
+  if (route.name === 'login') {
     return true
   }
   return false
