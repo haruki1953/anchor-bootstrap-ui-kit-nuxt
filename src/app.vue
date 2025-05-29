@@ -1,4 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useHead({
+  titleTemplate: (title) =>
+    title != null && title !== 'Nuxt' ? `${title} | Nuxt` : 'Nuxt'
+})
+</script>
 
 <template>
   <NuxtLayout>

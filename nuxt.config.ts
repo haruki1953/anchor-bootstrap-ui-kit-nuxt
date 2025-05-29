@@ -2,14 +2,21 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  modules: ['@nuxt/eslint', '@pinia/nuxt', '@vueuse/nuxt'],
+  modules: ['@nuxt/eslint', '@pinia/nuxt', '@vueuse/nuxt', '@nuxt/content'],
   srcDir: 'src/',
-  // components: [
-  //   {
-  //     path: '~/components',
-  //     pathPrefix: false // 取消自动前缀
-  //   }
-  // ],
+  components: [
+    {
+      path: '~/components',
+      pathPrefix: false // 取消自动前缀
+    }
+  ],
+
+  // better-sqlite3编译出现问题，node22.5.0以上可以如此解决（实验性功能）
+  // https://content.nuxt.com/docs/getting-started/configuration#experimentalnativesqlite
+  content: {
+    experimental: { nativeSqlite: true }
+  },
+
   app: {
     // head
     head: {

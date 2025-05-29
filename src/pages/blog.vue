@@ -1,4 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useHead({
+  title: 'Blog',
+  meta: [{ name: 'description', content: '这是一个关于 Nuxt 的示例页面' }]
+})
+</script>
 
 <template>
   <!------------------------------------------

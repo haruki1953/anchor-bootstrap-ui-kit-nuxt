@@ -85,6 +85,7 @@ const isLoginPage = computed(() => {
               <NuxtLink class="dropdown-item" to="/starter-template">
                 Starter Template
               </NuxtLink>
+              <NuxtLink class="dropdown-item" to="/content"> Content </NuxtLink>
             </NavItemDropdown>
           </ul>
           <ul
