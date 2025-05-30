@@ -1,5 +1,9 @@
 尝试用 nuxt 重构 https://github.com/wowthemesnet/Anchor-Bootstrap-UI-Kit
 
+姑且配置了tailwind（有冲突，设置了前缀 tw-）
+
+使用 nuxt-purgecss 处理未使用的css，index.html 从 200K 下降到了 35K，太棒了
+
 # Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.

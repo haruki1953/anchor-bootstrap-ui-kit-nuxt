@@ -2,7 +2,14 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  modules: ['@nuxt/eslint', '@pinia/nuxt', '@vueuse/nuxt', '@nuxt/content'],
+  modules: [
+    '@nuxt/eslint',
+    '@pinia/nuxt',
+    '@vueuse/nuxt',
+    '@nuxt/content',
+    '@nuxtjs/tailwindcss',
+    'nuxt-purgecss'
+  ],
   srcDir: 'src/',
   components: [
     {
@@ -10,6 +17,15 @@ export default defineNuxtConfig({
       pathPrefix: false // 取消自动前缀
     }
   ],
+
+  tailwindcss: {
+    config: {
+      prefix: 'tw-', // tailwindcss类名前缀
+      corePlugins: {
+        preflight: false // 禁用 Tailwind 的 CSS reset
+      }
+    }
+  },
 
   // better-sqlite3编译出现问题，node22.5.0以上可以如此解决（实验性功能）
   // https://content.nuxt.com/docs/getting-started/configuration#experimentalnativesqlite
